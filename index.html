@@ -12,15 +12,16 @@
         <header>
             <h1>STUDENT ATTENDANCE PAGE</h1> 
         </header>
-    <form onsubmit="attendance();return false">
-        <h2>Enter Your Name </h2>
-        <input type="text" id="name" name="name">
-        <h2>Enter Your Roll Number </h2>
-        <input autocomplete="off" type="text" id="Roll" name="name">
         <br>
         <br>
-
-        <input value="SUBMIT" type="SUBMIT" id="submit">
-    </form>
+        <br>
+        <div id="mypage">
+        <input type="text" id="name" name="name" placeholder="Name">
+        <br>
+        <input autocomplete="off" type="text" id="Roll" name="name" placeholder="Roll Number">
+        <br>
+        <br>
+        <button onclick="attendance()">SUBMIT</button>
+    </div>
     </body>
 </html>
