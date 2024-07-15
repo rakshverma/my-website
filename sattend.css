@@ -1,0 +1,18 @@
+header{
+    text-align: center;
+    background-color: black;
+    color:white
+}
+form{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+#submit{
+    color:blue;
+    background-color: blanchedalmond;
+    align-items: center;
+    justify-items: center;
+    
+}
