@@ -1,37 +1,72 @@
-header{
+header {
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
-button{
+button {
     width: 200px;
     height: 50px;
-    border:none;
-    background-color: blue;
-    color:whitesmoke;
-    font-size: medium;
-    cursor:pointer;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1rem;
     font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
 }
-#mypage{
+
+button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+
+#mypage {
     display: grid;
     gap: 20px;
-    justify-content: right;
-    align-items: right;
-    padding-right: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
 
-}
-#name{
-    width: 200px;
+#name, #Roll {
+    width: 100%;
+    max-width: 300px;
     height: 40px;
     border-radius: 15px;
-    font-size: medium;
+    font-size: 1rem;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
-#Roll{
-    width: 200px;
-    height: 40px;
-    border-radius: 15px;
-    font-size: medium;
+
+#name:focus, #Roll:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+    outline: none;
 }
-body{
-    background-color: aquamarine;
+
+body {
+    background: linear-gradient(to bottom right, #7FDBFF, #B0E57C);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
 }
